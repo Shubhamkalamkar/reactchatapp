@@ -3,6 +3,7 @@ import './css/Login.css'
 
 export const Login = () => {
   return (
+    <div className="loginpage">
     <div className="login-box">
         <h2>Login</h2>
         <form>
@@ -28,6 +29,7 @@ export const Login = () => {
 
         </form>
         <p style={{color:"#03e9f4"}}>You do have account? Login</p>
+    </div>
     </div>
   )
 }
