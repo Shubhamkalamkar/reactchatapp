@@ -29,9 +29,9 @@ export const Register = () => {
             id="file"
             required
           />
-          <label for="file">
+          <label for="file" className="add_avatar" >
             <img src={Add} alt="" />
-            <span>Add an avatar</span>
+            <span style={{color:"white"}}>Add an avatar</span>
           </label>
         </div>
 
