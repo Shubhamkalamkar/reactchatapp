@@ -83,6 +83,7 @@ const Search = () => {
           type="text"
           placeholder="Find a user"
           onKeyDown={handleKey}
+          onBlur={handleSearch}
           onChange={(e) => setUsername(e.target.value)}
           value={username}
         />

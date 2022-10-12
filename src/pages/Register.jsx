@@ -46,7 +46,7 @@ export const Register = () => {
             })
             await setDoc(doc(db,"userChats",res.user.uid),{});
 
-            navigate("/");
+            navigate("/reactchatapp/");
           });
         }
       );
@@ -127,7 +127,7 @@ export const Register = () => {
           Register
         </a>
       </form>
-      <p style={{ color: "#03e9f4" }}>You do have account? <Link to="/login" >Login</Link></p>
+      <p style={{ color: "#03e9f4" }}>You do have account? <Link to="/reactchatapp/login" >Login</Link></p>
     </div>
   );
 };

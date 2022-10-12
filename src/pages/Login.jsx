@@ -16,7 +16,7 @@ export const Login = () => {
     try {
 
         await signInWithEmailAndPassword(auth, email, password)
-navigate("/")
+navigate("/reactchatapp/")
       
     } catch {
       setErr(true);
@@ -54,7 +54,7 @@ navigate("/")
             </a>
 
         </form>
-        <p style={{color:"#03e9f4"}}>You do have account? <Link to="/register" >Register</Link></p>
+        <p style={{color:"#03e9f4"}}>You do have account? <Link to="/reactchatapp/register" >Register</Link></p>
     </div>
     </div>
   )
