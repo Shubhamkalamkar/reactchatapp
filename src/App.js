@@ -12,7 +12,7 @@ function App() {
 
   const ProtectedRoute = ({ children }) => {
     if (!currentUser) {
-      return <Navigate to="/login" />;
+      return <Navigate to="/reactchatapp/login" />;
     }
 
     return children
@@ -21,7 +21,7 @@ function App() {
   return (
     <BrowserRouter>
       <Routes>
-        <Route path="/">
+        <Route path="/reactchatapp/">
           <Route
             index
             element={
@@ -30,8 +30,8 @@ function App() {
               </ProtectedRoute>
             }
           />
-          <Route path="login" element={<Login />} />
-          <Route path="register" element={<Register />} />
+          <Route path="/reactchatapp/login" element={<Login />} />
+          <Route path="/reactchatapp/register" element={<Register />} />
         </Route>
       </Routes>
     </BrowserRouter>
